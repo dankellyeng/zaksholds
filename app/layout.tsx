@@ -9,7 +9,7 @@ import Footer from "./components/footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Zak's holds",
+  title: "Zak&apos;s holds",
   description: "Holds for ya hands",
   icons: {
     icon: "/icon.ico",

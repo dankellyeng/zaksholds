@@ -23,7 +23,8 @@ export default async function Home() {
         {/* <div className={page.bubbleContainer}> */}
         <div className={page.speechBubble}>
           <p className={page.speech}>
-            With prices like these you won't be short changed (just short roped)
+            With prices like these you won&apos;t be short changed (just short
+            roped)
           </p>
         </div>
         {/* </div> */}
