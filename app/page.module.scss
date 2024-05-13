@@ -1,0 +1,78 @@
+@import "../styles/styles.scss";
+
+.page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.fullPage {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  @include devices(tablet) {
+    height: 90vh;
+  }
+}
+
+.zakImage {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  bottom: 35px;
+  left: -40px;
+}
+
+.speechBubble {
+  transform: scale(-1, 1);
+  width: 50%;
+  max-height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid black;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 30px;
+  color: black;
+  position: absolute;
+  bottom: 190px;
+  right: 50px;
+  height: 100%;
+  @include devices(tablet) {
+    min-height: 125px;
+  }
+}
+
+.speechBubble:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid black;
+  border-top: 10px solid black;
+  border-bottom: 10px solid transparent;
+  right: 20px;
+  bottom: -23px;
+}
+
+.speechBubble:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #fff;
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid transparent;
+  right: 24px;
+  bottom: -13px;
+}
+
+.speech {
+  transform: scale(-1, 1);
+}

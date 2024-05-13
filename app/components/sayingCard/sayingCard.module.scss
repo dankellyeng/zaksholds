@@ -1,0 +1,34 @@
+@import "../../../styles/styles.scss";
+@import "../../../styles/variables";
+
+.heading {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-family: "Roxborough-CF";
+
+  &:hover {
+    color: #262b29;
+  }
+
+  @include devices(mobile) {
+    font-size: 22px;
+    max-width: 250px;
+  }
+}
+.allCards {
+  width: 30%;
+  height: 100%;
+  padding: 15px;
+  background-color: $color-secondary;
+  color: #f3ede2;
+  font-family: "Inconsolata-Regular";
+
+  @include devices(tablet) {
+    width: 100%;
+    padding: 40px;
+  }
+}

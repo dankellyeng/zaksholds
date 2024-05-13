@@ -1,0 +1,31 @@
+@import "../../../styles/styles.scss";
+
+.books {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  height: 55%;
+  width: 100%;
+  align-items: center;
+  gap: 6px;
+  animation: rotate 10s linear infinite;
+  transform-origin: center; /* Set the transform origin to the center */
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @include devices(tablet) {
+    // flex-direction: column;
+    // padding-bottom: 150px;
+  }
+}
+
+.body {
+  height: 100%;
+  width: 100%;
+}

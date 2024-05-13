@@ -1,0 +1,39 @@
+@import "../../../styles/styles.scss";
+@import "../../../styles/variables";
+
+.NavContainer {
+  width: 100%;
+}
+
+.Navbar {
+  background-color: $color-primary;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+  align-items: center;
+  padding-left: 0px;
+}
+
+.NavLink {
+  background-color: $color-primary;
+  color: #f3ede2;
+  font-size: 28px;
+  font-family: "Roxborough-CF";
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+
+  &:hover {
+    color: #262b29;
+  }
+
+  @include devices(mobile) {
+    font-size: 22px;
+  }
+}
