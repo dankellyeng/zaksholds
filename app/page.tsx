@@ -5,21 +5,21 @@ import page from "./page.module.scss";
 import Image from "next/image";
 
 export default async function Home() {
-  const data = await fetchEntries();
+  // const data = await fetchEntries();
 
-  if (!data) {
-    return;
-  }
-  let fields: any = []; // any is used here since the contentful type returned is overly complicated.
+  // if (!data) {
+  //   return;
+  // }
+  // let fields: any = []; // any is used here since the contentful type returned is overly complicated.
 
-  data.items.forEach((item: { fields: SayingType }) => {
-    fields.push(item.fields);
-  });
+  // data.items.forEach((item: { fields: SayingType }) => {
+  //   fields.push(item.fields);
+  // });
 
   return (
     <div className={page.fullPage}>
       <div className={page.page}>
-        <SayingBody data={fields} />
+        <SayingBody />
         {/* <div className={page.bubbleContainer}> */}
         <div className={page.speechBubble}>
           <p className={page.speech}>
